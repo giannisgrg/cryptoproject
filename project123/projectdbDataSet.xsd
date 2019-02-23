@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="projectdbDataSet" targetNamespace="http://tempuri.org/projectdbDataSet.xsd" xmlns:mstns="http://tempuri.org/projectdbDataSet.xsd" xmlns="http://tempuri.org/projectdbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="projectdbConnectionString_passkeeper" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="projectdbConnectionString_passkeeper (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.project123.Properties.Settings.GlobalReference.Default.projectdbConnectionString_passkeeper" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="passkeeper_dbTableAdapter" GeneratorDataComponentClassName="passkeeper_dbTableAdapter" Name="passkeeper_db" UserDataComponentName="passkeeper_dbTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="projectdbConnectionString_passkeeper (Settings)" DbObjectName="projectdb.passkeeper_db" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `account origin`, `account name`, `account password` FROM `passkeeper_db`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="projectdbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="projectdbDataSet" msprop:Generator_UserDSName="projectdbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="passkeeper_db" msprop:Generator_TableClassName="passkeeper_dbDataTable" msprop:Generator_TableVarName="tablepasskeeper_db" msprop:Generator_TablePropName="passkeeper_db" msprop:Generator_RowDeletingName="passkeeper_dbRowDeleting" msprop:Generator_RowChangingName="passkeeper_dbRowChanging" msprop:Generator_RowEvHandlerName="passkeeper_dbRowChangeEventHandler" msprop:Generator_RowDeletedName="passkeeper_dbRowDeleted" msprop:Generator_UserTableName="passkeeper_db" msprop:Generator_RowChangedName="passkeeper_dbRowChanged" msprop:Generator_RowEvArgName="passkeeper_dbRowChangeEvent" msprop:Generator_RowClassName="passkeeper_dbRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
